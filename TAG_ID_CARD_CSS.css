@@ -1,0 +1,127 @@
+/* Scrollbar setup */
+    ::-webkit-scrollbar {
+        width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+    background: #111111; 
+    }
+    ::-webkit-scrollbar-thumb {
+    background: #333333; 
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555555; 
+    }
+
+/* The buttons for each tab */
+
+    .IDTabButton1 {
+        background: url('https://eu4.paradoxwikis.com/images/thumb/4/4d/Government_monarchy.png/36px-Government_monarchy.png');
+    }
+    .IDTabButton2 {
+        background: url('https://eu4.paradoxwikis.com/images/thumb/d/db/Idea_bonus.png/36px-Idea_bonus.png');
+    }
+    .IDTabButton3 {
+        background: url('https://eu4.paradoxwikis.com/images/thumb/5/57/Traditions.png/36px-Traditions.png');
+    }
+    .IDTabButton4 {
+        background: url('https://eu4.paradoxwikis.com/images/thumb/0/0c/Manpower.png/36px-Manpower.png');
+    }
+    .IDTabButton5 {
+        background: url('https://eu4.paradoxwikis.com/images/thumb/e/e4/Center_of_reformation.png/36px-Center_of_reformation.png');
+    }
+
+/* The classes containing the whole ID Card with its Window */
+    .IDMainBox {
+        position: absolute;
+        left: 60px;
+        margin: 5px auto 0px auto;
+        height: 380px;
+        width: 852px;
+        background: none;
+        border: double 3px #bf8e4b;
+        border-radius: 5px;
+        z-index: 1;
+    }
+    .IDTabList {
+        position: absolute;
+        top: 20px;
+        height: 380px;
+        width: 40px;
+}
+    .IDTabLinks {
+        position: relative;
+        top: -5px;
+        float: left;
+        margin: 1px 0px 0px 4px;
+        height: 36px;
+        width: 36px;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .IDTabLinks:hover{
+        box-shadow: 0px 0px 1px #ffffff;
+    }
+    .IDTabContent {
+        position: absolute;
+        top: 2px;
+        left: 5px;
+        display: none;
+    }
+
+/* First tab of the ID card, where the player can see the starting stats of the nation, like the ruler, etc. The idea is to have something similar to what a player see when he clicks on the nation on the map when starting a new game. */
+
+/* Second tab of the ID card, where all national ideas will be posted. It will also indicate the mod source of said ideas, if it comes from NIE, FE, etc. */
+
+    .NatIdeasList {
+        position: absolute;
+        top: 0px;
+    }
+    .NatIdeasList span {
+        font-size: 1em;
+        font-weight: bold;
+        color: #bf8e4b;
+    }
+    .NatIdeasList .NatSlot, .NatIdeasList .NatIdeaSlot {
+        height:36px;
+        width: 365px;
+        position: relative;
+        color: #618360;
+        font-size: 0.9em;
+        background-color: #00334d;
+        background-image: url("https://drive.google.com/uc?export=view&id=11BsMFQaRt6wikFtHBk7N5MiLA9GPVXt1");
+        background-repeat: no-repeat;
+        background-position: left;
+        margin: 3px auto 1px auto;
+        padding-left: 45px;
+    }
+    .NatSlot {
+        border: solid 2px firebrick;
+    }
+    .NatIdeaSlot {
+        cursor: pointer;
+        border: solid 1px #a69663;
+    }
+    .NatIdeaSlot:hover {
+        border: solid 1px #eeeeee;
+        box-shadow: 0px 0px 1px #dddddd;
+    }
+    .NatIdeasDesc {
+        position: absolute;
+        top: 5px;
+        left: 415px;
+        height: 365px;
+        Width: 410px;
+        padding: 0px;
+        margin: 0px 10px 0px 10px;
+        background: #00334d;
+        border: solid 1px #a69663;
+        border-radius: 3px;
+        overflow: auto;
+    }
+    .IdeaContent {
+        position: absolute;
+        margin: 20px;
+        display: none;
+        text-align: justify;
+        color: #a69663;
+    }
